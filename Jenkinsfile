@@ -29,7 +29,7 @@ EMAIL_RECIPIENTS = "lmp004@.lvc.edu"
             stage('Deploy') {
                 steps {
                     echo 'Deploying....'
-                        sh 'docker run -it --name jetty-container --detached jetty-image'
+                        sh 'docker run -it --name jetty-container --detach jetty-image'
                 }
             }
         }
